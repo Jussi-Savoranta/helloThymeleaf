@@ -5,10 +5,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
 </head>
 	<body>
-	 	<div th:if="${age} &gt; 17">
-			<p th:text="'Welcome, ' +${name} + '!'">
-		</div>
+	 	<div th:text="${age} &gt; 17 ? 'Welcome, ' +${name} +'!' : 'You are too young!'"></div>
+	 	
 	</body>
-
-
 </html>
